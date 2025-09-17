@@ -27,7 +27,9 @@ const Index = () => {
                 <Shield className="h-3 w-3 mr-1" />
                 HIPAA Compliant
               </Badge>
-              <Button variant="medical">Get Started</Button>
+              <Button variant="medical" asChild>
+                <a href="/dashboard">Dashboard</a>
+              </Button>
             </div>
           </div>
         </div>
@@ -165,8 +167,8 @@ const Index = () => {
             Join the pilot program to help patients better understand their health records through AI-powered explanations
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="medical" size="lg">
-              Request Demo
+            <Button variant="medical" size="lg" asChild>
+              <a href="/dashboard">View Dashboard</a>
             </Button>
             <Button variant="outline" size="lg">
               Learn More
